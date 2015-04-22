@@ -1,6 +1,6 @@
 # Notice
 
-A gem to handle notifications, intended to use with rails applications.
+A gem to handle user notifications, intended to use with rails applications.
 
 ## Installation
 

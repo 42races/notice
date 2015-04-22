@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Notice::VERSION
   spec.authors       = ["Deepak Kumar"]
   spec.email         = ["deepakkumarnd@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{A gem to handle notifications.}
+  spec.description   = %q{A gem to handle notifications}
   spec.homepage      = ""
   spec.license       = "MIT"
 
