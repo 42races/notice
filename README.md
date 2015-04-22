@@ -1,10 +1,10 @@
 # Notice
 
-TODO: Write a gem description
+A gem to handle notifications, intended to use with rails applications.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Experimental, Not yet published
 
 ```ruby
 gem 'notice'
