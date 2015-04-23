@@ -15,6 +15,7 @@ module Notice
     def initialize(message, options = {})
       @message = message
       @options = extract_options(options)
+      @actor   = @options[:actor]
     end
 
     def to_s
@@ -44,7 +45,7 @@ module Notice
     end
 
     def invalid_valued_key?(key, val)
-      return true if val.nil? || val.empty?
+      return true if val.to_s.empty?
       values = VALID_OPTIONS[key]
       values && (!values.include?(val))
     end

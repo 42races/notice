@@ -58,5 +58,19 @@ module Notice
       n = Notification.new('', event: '')
       n.options.must_equal default_options
     end
+
+    describe '#to_s' do
+      before do
+        Actor = Struct.new(:name)
+        @actor= Actor.new('Deepak')
+
+        Event.register_event(:promote, 'promoted')
+      end
+
+      it 'converts a notification to string representation' do
+        n = Notification.new('', event: :promote, actor: @actor)
+        n.to_s.must_equal 'Deepak'
+      end
+    end
   end
 end
